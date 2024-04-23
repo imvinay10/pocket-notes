@@ -1,0 +1,38 @@
+.container1 {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    overflow-y: scroll;
+    height: 80%;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f;
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color */
+    font-weight: bold;
+    font-size: 20px; /* Adjust the font size */
+  }
+  
+  .profile-container p {
+    margin-left: 10px;
+  }
