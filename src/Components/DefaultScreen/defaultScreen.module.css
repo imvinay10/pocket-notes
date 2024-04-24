@@ -5,12 +5,16 @@
   padding: 0;
   background-color: #dae5f5;
   font-family: Roboto;
-  width: 75%;
+  width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  overflow-y: hidden;
   align-items: center;
   text-align: center;
+  overflow-y: hidden;
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 0;
 }
 .innerelement {
   display: flex;
@@ -38,4 +42,12 @@
 .ptagofsecurebanner {
   color: #292929;
   font-weight: 550;
+}
+
+/* responsive design */
+
+@media only screen and (min-width: 700px) {
+  .container {
+    display: block;
+  }
 }

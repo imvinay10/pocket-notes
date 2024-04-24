@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 .leftcontainer {
-  width: 25%;
+  width: 100%;
   background-color: white;
   height: 100vh;
   align-items: center;
@@ -15,8 +15,8 @@
   position: sticky;
   display: flex;
   background-color: #16008b;
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   text-align: center;
   color: white;
@@ -24,7 +24,19 @@
   font-weight: bold;
   align-items: center;
   justify-content: center;
-  left: 18rem;
+  left: 17rem;
   bottom: 5%;
   cursor: pointer;
+}
+@media only screen and (min-width: 700px) {
+  .leftcontainer {
+    width: 25%;
+    max-width: 300px;
+  }
+  .circlebutton {
+    left: 13rem;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+  }
 }

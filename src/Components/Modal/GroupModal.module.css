@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
+.main {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(47, 47, 47, 0.75);
+  overflow-y: hidden;
+}
 .popup {
-  height: 13rem;
-  width: 28rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: none;
-  border-radius: 0.2rem;
-  padding: 20px;
-  font-family: Roboto;
+
+  font-size: Roboto;
 }
 
 .popup__title {
@@ -40,13 +45,12 @@
 }
 
 .popup__input > input {
-  width: 17vw;
-  height: 5vh;
   border: 2px solid grey;
   border-radius: 6vh;
   padding: 0.5rem;
   font-size: 2vh;
   font-weight: 600;
+  width: 40%;
 }
 
 .popup__color__input {
@@ -77,7 +81,6 @@
   cursor: pointer;
   background-color: black;
 }
-
 .popup__color__input__color__1:hover,
 .popup__color__input__color__2:hover,
 .popup__color__input__color__3:hover,
@@ -86,7 +89,6 @@
 .popup__color__input__color__6:hover {
   outline: 2px solid black;
 }
-
 .popup__color__input__color__1 {
   background-color: #b38bfa;
 }
@@ -128,6 +130,7 @@
   border: none;
   border-radius: 4vh;
   background-color: #001f8b;
+  cursor: pointer;
 }
 
 .highlight {
@@ -142,4 +145,17 @@
   cursor: pointer;
   font-size: 20px; /* Adjust the size of the icon */
   color: #333; /* Change the color of the icon */
+}
+@media (max-width: 768px) {
+  .popup {
+    width: 90%;
+    max-width: 320px;
+  }
+  .popup__close > button {
+    width: 40%;
+  }
+  .popup__close {
+    display: flex;
+    justify-content: center;
+  }
 }
